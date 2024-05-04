@@ -1,0 +1,142 @@
+#background{
+    min-height: 1050px;
+    width: 100%;
+     }
+#top{
+    height: 35px;
+    width: 100%;
+    background:#2c7ad6;
+    line-height: 35px;
+    padding: 0px 20px 9px 100px;
+    box-sizing: border-box;
+    word-spacing:10px ;
+    }
+#menu{
+    height: 65px;
+    width: 100%;
+    background:green;
+    margin-left: -3%;
+    }
+#logo{
+    height: 65px;
+    width: 40%;
+    background:white;
+    text-align: center;
+    line-height: 65px;
+    font-size: 40px;
+    float: left;
+}
+#menu1{
+    height: 65px;
+    width: 60%;
+    background:white;
+    float: left;
+     }
+#menu1 UL{
+    list-style: none;
+    padding-left: 200px;
+    box-sizing: border-box;
+    margin-left: 25%;
+    }
+#menu1 LI{
+    height: 45px;
+    width: 130px;
+    text-align: center ; 
+    display: inline-block; 
+    line-height: 45px;
+    transform: translateY(-5px);
+    color: black;
+    font-size: 20px;
+    }
+#menu1 LI:hover{
+    background: #2c7ad6;  
+    color: white; 
+    transition: all ease 1s;
+    border-radius: 3px;
+    }
+    
+#slider{
+    background-image: url("bg.png");
+    height: 650px;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+/* animation-name:slider;
+    animation-duration: 20s;
+    animation-iteration-count:infinite ;
+    animation-delay: 3s;*/
+    }
+    /*
+    @keyframes slider{
+    
+    from{
+        background:url(image/4.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    to{
+        background:url(image/4.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    } 
+    }
+  
+#welcome{
+    height:640px;
+    width: 40%;
+    background:rgba(0,0,0, .4); 
+    float: left;
+    font-size: 41PX;
+    color: white;
+    text-align: center;
+    padding-top: 250px;
+    box-sizing: border-box;
+    }*/
+.login-box{
+    height: 40%;
+    width: 30%;
+    background:rgba(255,255,255, .5); 
+    float: left; 
+    border-radius: 7px ; 
+    margin: 0 auto;
+	margin-top: 10%;
+    margin-left: 35%;
+    }
+
+.login-box input[type="text"],.login-box input[type="password"] {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    border: none;
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+    
+.login-box button[type="submit"] {
+    border-radius: 7px; 
+    border: none; 
+    width: 30%; 
+    height: 30px; 
+    background-color: #4CAF50;  
+    color: #ffff;
+    cursor: pointer;
+    margin-left: 33%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.login-box button[type="submit"]:hover {
+	background-color: #45a049;
+}
+
+#down{
+    height: 300px;
+    width: 100%;
+    margin-top: 10px;
+    background:#2c7ad6;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    }
