@@ -7,7 +7,7 @@ class Book {
         this.borrowedDate = borrowedDate; // Thêm thuộc tính borrowedDate
     }
 }
-class Queue {
+class Queue { /*Tạo class Queue để thêm hàng đợi cho sách trong thư viện và sách đã mượn*/
     constructor() {
         this.items = [];
     }
@@ -60,7 +60,7 @@ function addBook() {
 }
 
 function deleteBook() {
-    const id = document.getElementById('id').value;
+    const id = document.getElementById('id').value; // Lấy ID sách từ trường nhập liệu
     if (!id) {
         alert('Please enter the ID of the book to delete.');
         return;
@@ -85,7 +85,7 @@ function deleteBook() {
 
 function updateBook() {
     const id = document.getElementById('id').value;
-    const title = document.getElementById('title').value;
+    const title = document.getElementById('title').value;// Lấy thông tin sách mới từ trường nhập liệu
     const author = document.getElementById('author').value;
     if (!id || (!title && !author)) {
         alert('Please fill in at least one field (title or author) and provide the book ID.');
@@ -202,7 +202,7 @@ function displayBooks(books = []) {
     const bookList = document.getElementById('bookList');
     bookList.innerHTML = '';
     
-    books.forEach(book => {
+    books.forEach(book => { /*Hiển thị thông tin sách trong bảng*/
         const status = book.status === 'borrowed' ? 'Borrowed' : 'Available';
         const row = document.createElement('tr');
         row.innerHTML = `
@@ -221,7 +221,7 @@ function displayBooks(books = []) {
 }
 
 
-function clearForm() {
+function clearForm() /*Xóa trường nhập liệu sau khi thêm, xóa, cập nhật sách*/{
     document.getElementById('id').value = '';
     document.getElementById('title').value = '';
     document.getElementById('author').value = '';
